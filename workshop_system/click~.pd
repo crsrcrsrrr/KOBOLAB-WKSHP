@@ -1,0 +1,16 @@
+#N canvas 0 0 450 300 12;
+#X obj 160 86 line~;
+#X obj 160 115 *~ 48000;
+#X obj 159 145 expr~ $v1 < 1;
+#X msg 160 61 0 \, 0.01 10;
+#X obj 168 27 inlet;
+#X obj 166 198 outlet~;
+#X obj 273 48 loadbang;
+#X msg 283 81 1;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 5 0;
+#X connect 3 0 0 0;
+#X connect 4 0 3 0;
+#X connect 6 0 7 0;
+#X connect 7 0 0 0;
